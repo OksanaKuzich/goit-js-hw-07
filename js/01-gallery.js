@@ -47,12 +47,11 @@ function onElementClick(event) {
     }
   );
 
-  instance.show();
-}
-
-function closeByEscape(event) {
-  console.log(event.code);
-  if (event.keyCode === "Escape") {
-    instance.close;
+  function closeByEscape(event) {
+    if (event.code === "Escape") {
+      instance.close();
+    }
   }
+
+  instance.show();
 }
